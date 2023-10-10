@@ -4,23 +4,23 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://vithorframos.github.io/VithorTeste/',
-	base: '/VithorTeste',
+	base: '/docs/index.mdx',
 	integrations: [
 		starlight({
-			favicon: '../src/assets/favicon-32x32.png',
+			favicon: '/VithorTeste/src/assets/favicon-32x32.png',
 			head: [
 				// Adiciona um favicon ICO de fallback para o Safari.
 				{
 					tag: 'link',
 					attrs: {
 						rel: 'icon',
-						href: '/public/favicon-32x32.png',
+						href: '/VithorTeste/public/favicon-32x32.png',
 						sizes: '32x32',
 					},
 				},
 			],
 			logo: {
-				src: '/src/assets/logoAe.png',
+				src: '/VithorTeste/src/assets/logoAe.png',
 			},
 			title: 'Safe2Pay',
 			social: {
@@ -109,7 +109,7 @@ export default defineConfig({
 			],
 			customCss: [
 				// Caminho relativo ao seu arquivo CSS customizado
-				'/src/styles/custom.css',
+				'/VithorTeste/src/styles/custom.css',
 			],
 		}),
 	],
