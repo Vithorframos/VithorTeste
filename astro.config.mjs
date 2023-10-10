@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://vithorframos.github.io/VithorTeste/',
-	base: '/docs',
+	base: '/VithorTeste',
 	integrations: [
 		starlight({
 			favicon: '../src/assets/favicon-32x32.png',
@@ -14,13 +14,13 @@ export default defineConfig({
 					tag: 'link',
 					attrs: {
 						rel: 'icon',
-						href: '../public/favicon-32x32.png',
+						href: '/public/favicon-32x32.png',
 						sizes: '32x32',
 					},
 				},
 			],
 			logo: {
-				src: '../src/assets/logoAe.png',
+				src: '/src/assets/logoAe.png',
 			},
 			title: 'Safe2Pay',
 			social: {
@@ -109,7 +109,7 @@ export default defineConfig({
 			],
 			customCss: [
 				// Caminho relativo ao seu arquivo CSS customizado
-				'../src/styles/custom.css',
+				'/src/styles/custom.css',
 			],
 		}),
 	],
