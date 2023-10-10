@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://vithorframos.github.io/VithorTeste/',
-	base: '/VithorTeste/src/docs/index.mdx',
+	base: '/VithorTeste/src/docs/',
 	integrations: [
 		starlight({
 			favicon: '/VithorTeste/src/assets/favicon-32x32.png',
