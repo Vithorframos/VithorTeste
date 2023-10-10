@@ -109,7 +109,7 @@ export default defineConfig({
 			],
 			customCss: [
 				// Caminho relativo ao seu arquivo CSS customizado
-				'/VithorTeste/src/styles/custom.css',
+				'../VithorTeste/src/styles/custom.css',
 			],
 		}),
 	],
