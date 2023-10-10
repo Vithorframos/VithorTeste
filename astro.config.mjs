@@ -7,20 +7,20 @@ export default defineConfig({
 	base: '/docs',
 	integrations: [
 		starlight({
-			favicon: './src/assets/favicon-32x32.png',
+			favicon: '../src/assets/favicon-32x32.png',
 			head: [
 				// Adiciona um favicon ICO de fallback para o Safari.
 				{
 					tag: 'link',
 					attrs: {
 						rel: 'icon',
-						href: '/imagens/favicon.ico',
+						href: '../public/favicon-32x32.png',
 						sizes: '32x32',
 					},
 				},
 			],
 			logo: {
-				src: './src/assets/logoAe.png',
+				src: '../src/assets/logoAe.png',
 			},
 			title: 'Safe2Pay',
 			social: {
@@ -109,7 +109,7 @@ export default defineConfig({
 			],
 			customCss: [
 				// Caminho relativo ao seu arquivo CSS customizado
-				'./src/styles/custom.css',
+				'../src/styles/custom.css',
 			],
 		}),
 	],
